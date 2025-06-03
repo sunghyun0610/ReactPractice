@@ -20,6 +20,6 @@ function App() {
       </header>
     </div>
   );
-}
+}// js 함수에서도 html을 쓸 수 있다 -> JSX
 
 export default App;
