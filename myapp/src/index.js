@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'; //jsx를 쓰기위해 import하는 것
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
@@ -15,3 +15,5 @@ root.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+
+//npm start하는순간 제일 먼저 읽는 파일이 index.js이다
