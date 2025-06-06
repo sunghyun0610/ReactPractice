@@ -1,13 +1,18 @@
 import React from 'react'; //jsx를 쓰기위해 import하는 것
 import ReactDOM from 'react-dom/client';
+import {BrowserRouter} from 'react-router-dom'//브라우저 url입력했을 떄 라우팅하기 위해
 import './index.css';
 import App from './App';//이건 App.js를 의미 그리고 <App />태그로도 쓰임 (확장자가 .js이면 확장자 생략가능하다)
+import About from './pages/About';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));// index.html의 <div id="root">를 가져온 것
 root.render(
   <React.StrictMode>
-    <App /> 
+    <BrowserRouter>
+      <App/>
+    </BrowserRouter>
+    
   </React.StrictMode>
   //결국 이부분이 index.html의 <div id="root"> 여기로 들어온다는 것 </div>
 );
